@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo do SIMON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400&display=swap" rel="stylesheet"
+        type="text/css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+        </source>
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+        </source>
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+        </source>
+    </audio>
+    <audio id="clip4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+        </source>
+    </audio>
+</head>
+
+<body>
+
+    <div id="circuloFora">
+        <div id="esquerdacima"></div>
+        <div id="direitacima"></div>
+        <div id="esquerdabaixo"></div>
+        <div id="direitabaixo"></div>
+        <div id="circuloDentro">
+            <div id="titulo">SIMON!</div>
+            <div id="opcoes">
+                <input type="checkbox" class="selecionar" id="ligado">
+                <button class="botao" id="start">Start</button>
+                <input type="checkbox" class="selecionar" id="restrito">
+            </div>
+            <div class="texto1">
+                <span>LIGADO</span><span>ESTRITO</span>
+            </div>
+            <div id="rodada"></div>
+            <div class="texto2">
+                CONTADOR
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
